@@ -62,11 +62,9 @@
 
 .text-blocks {
     display: inline-block;
-    /*padding-right: 10px;*/
     padding-left: 20px;
     padding-right: 20px;
     width: 22%;
-    /*margin-bottom: -4px;*/
 }
 
 .text-blocks:not(:last-child) {
@@ -78,11 +76,10 @@
     bottom: 0px;
     right: 0;
     width: 61%;
+    background-color: #fff;
 }
 
 .add-block-text {
-    /* top: 23px;
-    left: 173px;*/
     top: 5%;
     left: 22%;
     position: absolute;
@@ -111,5 +108,64 @@
 @media (max-width: 1057px) {
     .add-block-text {
         left: 27%;
+        top: 10%;
+    }
+}
+
+@media(max-width:768px) {
+    .text-box {
+        position: inherit;
+        padding: 20px;
+        width: 57%;
+    }
+    .add-block-text {
+        display: none;
+    }
+    .add-block-ipad {
+        left: 5%;
+        position: absolute;
+        width: 27%;
+        background-color: #fff;
+        color: #0165A7;
+        padding: 10px;
+        border-bottom: 7px solid #0165A7;
+        font-size: 2.5vw;
+        line-height: 1.2;
+        font-weight: bold;
+        top: 51%;
+    }
+    .wrap-box {
+        position: relative;
+        height: 320px;
+        margin: -158px auto;
+        width: 90%;
+        overflow: inherit;
+    }
+    .header {
+        height: 200px;
+    }
+    .grey-img {
+        width: 36%;
+    }
+    .text-blocks {
+        width: 100%;
+        overflow: inherit !important;
+        padding: 20px 0;
+    }
+    .text-blocks:not(:last-child) {
+        border-bottom: 1px solid #eee;
+        border-right: 0;
+    }
+    .banner {
+        padding-right: 20%;
+        width: 60%;
+        font-size: 2.5vw;
+        clear: none;
+        margin-bottom: 0;
+    }
+    .img-banner {
+        height: 65px;
+        clear: none;
+        width: 20%;
     }
 }
