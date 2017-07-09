@@ -120,12 +120,13 @@
     .text-box {
         position: inherit;
         padding: 20px;
-        width: 57%;
+        width: 56%;
     }
     .add-block-text {
         display: none;
     }
     .add-block-ipad {
+        cursor: pointer;
         left: 5%;
         position: absolute;
         width: 27%;
